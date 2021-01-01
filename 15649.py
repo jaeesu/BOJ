@@ -1,20 +1,17 @@
-'''TRUE=True
-FALSE=False
+visited = [False]*9
+out=[]
 
-a,b=input().split()
-a=int(a)
-b=int(b)
+def finder(cnt, N, M) :
+    if cnt==M :
+        print(' '.join(map(str, out)))
+        return
+    for i in range(N) :
+        if not visited[i] :
+            visited[i] = True
+            out.append(i+1)
+            finder(cnt+1, N, M)
+            visited[i] = False
+            out.pop()
 
-while(a>8 or a<b or b<1) :
-    a,b=input().split()
-    a=int(a)
-    b=int(b)
-
-
-visited[b]=[]
-
-def recur(a,b) :
-    for i in int(b) :
-        if(visited[i]==FALSE) :
-            visited[i] = TRUE
-            cnt=cnt+1'''
+N,M=map(int, input().split())
+finder(0, N, M)

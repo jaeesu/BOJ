@@ -6,9 +6,6 @@ def quadrant(x,y) :
         if(y>0) : return 2
         else : return 3
 
-a,b = input().split()
-
-'''while(int(a) * int(b) == 0) :
-    a,b = input().split()'''
-
+a=input()
+b=input()
 print(quadrant(int(a),int(b)))
