@@ -13,7 +13,7 @@ void search(int cnt){
         }
     }
     
-};;;
+}
 
 int main(){
     return 0;
