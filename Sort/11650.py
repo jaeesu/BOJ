@@ -1,9 +1,9 @@
 N=int(input())
-list=[]
+lst=[]
 for i in range(N) :
     x,y=map(int, input().split())
-    list.append((x,y))
-list = sorted(list)
+    lst.append((x,y))
+lst = sorted(lst)
 
-for i in list :
+for i in lst :
     print(i[0], i[1])
