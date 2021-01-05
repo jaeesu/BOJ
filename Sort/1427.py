@@ -1,8 +1,8 @@
 N = int(input())
-list=[]
+lst=[]
 while(N!=0) :
-    list.append(N%10)
+    lst.append(N%10)
     N=int(N/10)
-list.sort(reverse=True)
-for i in list :
+lst.sort(reverse=True)
+for i in lst :
     print(i,end='')
