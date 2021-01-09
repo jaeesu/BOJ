@@ -1,3 +1,5 @@
+import sys
+
 class Queue :
     def __init__(self) :
         self.queue=[]
@@ -22,10 +24,10 @@ class Queue :
         return self.queue[-1]
 
 que=Queue()
-N = int(input())
+N = int(sys.stdin.readline())
 
 for i in range(N) : 
-    line = input().split()
+    line=sys.stdin.readline().split()
     a=line[0]
     if(a=="push") : que.push(line[1])
     elif(a=="pop") : print(que.pop())
