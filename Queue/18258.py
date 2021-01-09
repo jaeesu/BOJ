@@ -1,0 +1,35 @@
+class Queue :
+    def __init__(self) :
+        self.queue=[]
+    def push(self, num) :
+        self.queue.append(num)
+    def pop(self) :
+        if(len(self.queue)==0) : return -1
+        else : 
+            temp=self.queue[0]
+            del self.queue[0]
+            return temp
+    def size(self) : 
+        return len(self.queue)
+    def empty(self) :
+        if(len(self.queue)==0) : return 1
+        return 0
+    def front(self) :
+        if(len(self.queue)==0) : return -1
+        return self.queue[0]
+    def back(self) :
+        if(len(self.queue)==0) : return -1
+        return self.queue[-1]
+
+que=Queue()
+N = int(input())
+
+for i in range(N) : 
+    line = input().split()
+    a=line[0]
+    if(a=="push") : que.push(line[1])
+    elif(a=="pop") : print(que.pop())
+    elif(a=="size") : print(que.size())
+    elif(a=="empty") : print(que.empty())
+    elif(a=="front") : print(que.front())
+    elif(a=="back") : print(que.back())
