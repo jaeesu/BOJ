@@ -16,7 +16,7 @@ def check(word, lst) :
 while(1) :
     global stk
     stk=[]
-    line=sys.stdin.readline().rstrip()
+    line=sys.stdin.readline()[:-1]
     if(line==".") : break
     for word in line :
         if(word==".") : 

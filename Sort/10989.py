@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # counting sort : 계수 정렬
 
 import sys
@@ -12,3 +13,19 @@ for i in range(len(arr)) :
     while(arr[i]!=0) :
         print(i)
         arr[i]-=1
+=======
+# counting sort : 계수 정렬
+
+import sys
+N = int(input())
+
+arr = [0]*10001
+
+for i in range(N) :
+    arr[int(sys.stdin.readline())] += 1
+    
+for i in range(len(arr)) :
+    while(arr[i]!=0) :
+        print(i)
+        arr[i]-=1
+>>>>>>> 8a0a3a07728b30a5a301d170f090e0896e9ed10d
