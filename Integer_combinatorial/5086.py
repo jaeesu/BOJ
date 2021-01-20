@@ -5,4 +5,3 @@ while (A!=0 and B!=0):
     elif(A%B==0) : print("multiple")
     else : print("neither")
     A,B = map(int, input().split())
-#

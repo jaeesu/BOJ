@@ -1,3 +1,4 @@
+
 def quadrant(x,y) :
     if (x>0) :
         if (y>0) :return 1
@@ -8,4 +9,5 @@ def quadrant(x,y) :
 
 a=input()
 b=input()
+
 print(quadrant(int(a),int(b)))

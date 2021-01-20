@@ -22,9 +22,7 @@ class stack :
         return self.lst[-1]
 
 N = int(input())
-
 lst_stack=stack()
-
 for i in range(N) :
     lst=input().split()
     a=lst[0]
