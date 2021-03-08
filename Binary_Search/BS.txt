@@ -1,0 +1,8 @@
+*이분 탐색 : 탐색 범위를 두 부분으로 분할해서 찾는 방식
+left, right,mid((left+right)/2) 값으로 탐색
+    1.이분 탐색 시, 이미 정렬이 되어있어야 한다.
+    2.mid 설정
+    3.mid 값과 구하고자 하는 값을 비교
+    4.mid보다 값이 크면 left = mid+1, 작으면 right = mid-1
+    5.left > right가 될 때까지 반복
+시간복잡도 : O(log(n))
